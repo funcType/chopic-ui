@@ -17,28 +17,32 @@ const Auth = ({ submitLabel, onSubmit, children }: AuthProps) => {
       sx={{
         height: "100vh",
         maxWidth: {
-          xs: "70%",
-          md: "30%",
+          xs: "90%",
+          sm: "80%",
+          md: "60%",
+          lg: "40%",
         },
         margin: "0 auto",
         justifyContent: "center",
       }}
     >
       <TextField
+        fullWidth
         type="email"
-        label="Email"
+        label="Email Address"
         variant="outlined"
         value={email}
         onChange={(event) => setEmail(event.target.value)}
       />
       <TextField
+        fullWidth
         type="password"
         label="Password"
         variant="outlined"
         value={password}
         onChange={(event) => setPassword(event.target.value)}
       />
-      <Button variant="contained" onClick={() => onSubmit({ email, password })}>
+      <Button fullWidth variant="contained" onClick={() => onSubmit({ email, password })}>
         {submitLabel}
       </Button>
       {children}
@@ -47,4 +51,6 @@ const Auth = ({ submitLabel, onSubmit, children }: AuthProps) => {
 };
 
 export default Auth;
+
+
 
