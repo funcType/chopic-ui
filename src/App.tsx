@@ -10,7 +10,7 @@ import router from "./components/Routes";
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
-  },
+  }
 });
 
 const App = () => {

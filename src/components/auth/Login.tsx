@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <div>
       <Auth submitLabel="Login" onSubmit={async () => { }}>
-        <Link to="/signup" style={{ display: "block", textAlign: "center" }}>
+        <Link to="/register" style={{ display: "block", textAlign: "center" }}>
           <MaterialLink>Signup</MaterialLink>
         </Link>
       </Auth>
